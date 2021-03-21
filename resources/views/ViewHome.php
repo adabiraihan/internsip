@@ -65,6 +65,41 @@
         height:35px;
         border: 6px solid transparent;
     }
+
+    #formcarikerja{
+        position:relative;
+        top:-680px;
+    }
+
+    #jenisjob{
+        position:relative;
+        font-size: 23px;
+        outline: 0;
+        border-width: 0 0 2px;
+        border-color: whitesmoke;
+        background-color: transparent;
+    }
+
+    #wilayah{
+        position:relative;
+        bottom: -60px;
+        font-size: 23px;
+        outline: 0;
+        border-width: 0 0 2px;
+        border-color: whitesmoke;
+        background-color: transparent;
+    }
+
+    #spesialisasi{
+        position:relative;
+        bottom: -120px;
+        font-size: 23px;
+        outline: 0;
+        border-width: 0 0 2px;
+        border-color: whitesmoke;
+        background-color: transparent;
+    }
+
 </style>
 
 </head>
@@ -106,5 +141,19 @@
 
 <img src="img/homepic.jpg" id="img1">
 
+<div class="container">   
+        <div class="top-left"> 
+            <form id="formcarikerja" clas="form-control form-control-lg">
+                <h1 style="color: white;">Jenis Pekerjaan</h1>
+                <input type="text" id="jenisjob" placeholder="Designing">
+                <br>
+                <h1 style="color: white;position:relative;bottom:-60px;">Wilayah</h1>
+                <input type="text" id="wilayah" placeholder="Bandung">
+                <br>
+                <h1 style="color: white;position:relative;bottom:-120px;">Spesialisasi</h1>
+                <input type="text" id="spesialisasi" placeholder="Quality Assurance">
+            </form>
+        </div>
+</div>
 </body>
 </html>
