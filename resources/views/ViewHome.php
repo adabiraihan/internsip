@@ -4,63 +4,63 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internsip</title>
 
 <style>
 
     #title{
-        font-size: 40px;
+        font-size: 3vw;
         color: black;
         font-weight:bold;
     }
     #nav1{
-        font-size: 22px;
+        font-size: 1.5vw;
         position: relative;
-        right: -200px;
-        bottom:-5px;
+        right: -50%;
+        bottom: -15%;
         color: black;
         font-weight:bold;
     }
 
     #nav2{
-        font-size: 22px;
+        font-size: 1.5vw;
         position: relative;
-        right: -250px;
-        bottom:-5px;
+        right: -115%;
+        bottom:-15%;
         color: black;
         font-weight:bold;
     }
 
     #nav3{
-        font-size: 22px;
+        font-size: 1.5vw;
         position: relative;
-        right: -300px;
-        bottom:-5px;
+        right: -150%;
+        bottom:-15%;
         color: black;
         font-weight:bold;
     }
 
     #img1{
         position:relative;
-        top: -20px;
-        width:1519px;
+        top: -25px;
+        width:100%;
     }
 
     #select{
-        font-size:22px;
+        font-size:1.5vw;
     }
 
     #formpilihbahasa{
         position:relative;
-        right:-480px;
-        bottom:-12px;
+        right:-135%;
+        bottom:-15px;
     }
 
     #selectbahasa{
         background-color: #F0FFF0;
         position:relative;
-        right:-5px;
+        right:-2%;
         width:155px;
         height:35px;
         border: 6px solid transparent;
@@ -73,7 +73,7 @@
 
     #jenisjob{
         position:relative;
-        font-size: 23px;
+        font-size: 1.5vw;
         outline: 0;
         border-width: 0 0 2px;
         border-color: whitesmoke;
@@ -83,7 +83,7 @@
     #wilayah{
         position:relative;
         bottom: -60px;
-        font-size: 23px;
+        font-size: 1.5vw;
         outline: 0;
         border-width: 0 0 2px;
         border-color: whitesmoke;
@@ -93,13 +93,20 @@
     #spesialisasi{
         position:relative;
         bottom: -120px;
-        font-size: 23px;
+        font-size: 1.5vw;
         outline: 0;
         border-width: 0 0 2px;
         border-color: whitesmoke;
         background-color: transparent;
     }
 
+    #buttoncari{
+        position: relative;
+        bottom: -190px;
+        left: -267px;
+        height: 50px;
+        width: 260px;
+    }
 </style>
 
 </head>
@@ -152,6 +159,8 @@
                 <br>
                 <h1 style="color: white;position:relative;bottom:-120px;">Spesialisasi</h1>
                 <input type="text" id="spesialisasi" placeholder="Quality Assurance">
+                
+                <button type="button" class="btn btn-primary btn btn-lg" id="buttoncari">Cari Lowongan !</button>
             </form>
         </div>
 </div>
