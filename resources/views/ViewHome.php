@@ -45,7 +45,7 @@
     #nav3{
         font-size: 1.5vw;
         position: relative;
-        right: -120%;
+        right: -900%;
         bottom:-15%;
         color: black;
         font-weight:bold;
@@ -166,11 +166,18 @@
     }
     .modal-login .btn, .modal-login .btn:active {	
         border: none;
-        background: #00ce81 !important;
         line-height: normal;
     }
     .modal-login .btn:hover, .modal-login .btn:focus {
-        background: #00bf78 !important;
+        background: #1e90ff !important;
+    }
+
+    #btnlogin{
+        background-color: #00ce81;
+    }
+
+    #btnlogin:hover{
+        background: #02aa80 !important;
     }
     .modal-login .modal-footer {
         background: #ecf0f1;
@@ -208,20 +215,7 @@
           <a class="nav-link" id="nav2" href="#">Cari Perusahaan</a>
         </li>
         <li class="nav-item">
-          <a href="#ModalLogin" class="nav-link active trigger-btn" data-toggle="modal" id="nav3">My Internsip</a>
-        </li>
-        <li>
-            <div class="language-picker js-language-picker">
-                <form action="" class="language-picker__form" id="formpilihbahasa">
-                    <label for="language-picker-select" id="select">Pilih Bahasa</label>
-                    <select name="language-picker-select" id="selectbahasa">
-                        <option lang="de" value="deutsch"selected>Bahasa Indonesia</option>
-                        <option lang="en" value="english" >English</option>
-                        <option lang="fr" value="francais">Français</option>
-                        <option lang="it" value="italiano">Italiano</option>
-                    </select>
-                </form>
-            </div>
+          <a href="#ModalLogin" class="nav-link active trigger-btn" data-toggle="modal" id="nav3">Login</a>
         </li>
       </ul>
     </div>
@@ -247,13 +241,39 @@
         </div>
 </div>
 
-<!-- MODAL LOGIN POP UP-->
+<!-- Modal Pilih Register User / Perusahan-->
+<div id="ModalPilih" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">				
+				<h4 class="modal-title">Member Login</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+					<div class="form-group">
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ModalRegisterUser" data-dismiss="modal">Buat Akun User</button>
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ModalRegisterPerusahaan" data-dismiss="modal">Buat Akun Perusahaan</button>
+					</div>				
+			</div>
+			<div class="modal-footer">
+				<!--<a href="#" class="nav-link active trigger-btn" data-dismiss="modal" data-toggle="modal">Belum punya akun ? Klik untuk Registrasi</a>-->
+			</div>
+		</div>
+	</div>
+</div>    
+<!------------------------------------------------------------------------------>
+
+
+
+<!-- Modal Login -->
 
 <div id="ModalLogin" class="modal fade">
 	<div class="modal-dialog modal-login">
 		<div class="modal-content">
 			<div class="modal-header">				
-				<h4 class="modal-title">Member Login</h4>
+				<h4 class="modal-title">Login</h4>
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 			</div>
 			<div class="modal-body">
@@ -267,21 +287,64 @@
 						<input type="password" class="form-control" placeholder="Password" required="required">					
 					</div>
 					<div class="form-group">
-						<input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+						<input type="submit" class="btn btn-success btn-block btn-lg" id="btnlogin" value="Login">
 					</div>
 				</form>
 			</div>
 			<div class="modal-footer">
-				<a href="#ModalRegister" class="nav-link active trigger-btn" data-dismiss="modal" data-toggle="modal">Belum punya akun ? Klik untuk Registrasi</a>
+				<a href="#ModalPilih" class="nav-link active trigger-btn" data-dismiss="modal" data-toggle="modal">Belum punya akun ? Klik untuk Registrasi</a>
 			</div>
 		</div>
 	</div>
 </div>    
-<!--MODAL BRTTTTTTT--> 
+<!------------------------------------------------------------------------------>
 
 
-<!-- Modal Register-->
-<div id="ModalRegister" class="modal fade" >
+<!-- Modal Register User-->
+<div id="ModalRegisterPerusahaan" class="modal fade" >
+	<div class="modal-dialog modal-login" id="modal-body-regist">
+		<div class="modal-content">
+			<div class="modal-header">				
+				<h4 class="modal-title">Registration</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form action="#" method="post">
+					<div class="form-group">
+						<i class="fa fa-user"></i>
+						<input type="text" class="form-control" placeholder="Username" required="required">
+					</div>
+                    <div class="form-group">
+						<i class="fa fa-lock"></i>
+						<input type="password" class="form-control" placeholder="Password" required="required">
+					</div>
+                    <div class="form-group">
+						<i class="fa fa-lock"></i>
+						<input type="password" class="form-control" placeholder="Confirm Password" required="required">
+					</div>
+                    <div class="form-group">
+						<i class="fa fa-home "></i>
+						<input type="text" class="form-control" placeholder="Nama Perusahaan" required="required">
+					</div>
+					<div class="form-group">
+						<i class="fa fa-envelope "></i>
+						<input type="text" class="form-control" placeholder="Email" required="required">					
+					</div>
+                    <div class="form-group">
+						<i class="fa fa-address-book "></i>
+						<input type="text" class="form-control" placeholder="No Telp" required="required">					
+					</div>
+					<div class="form-group">
+						<input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>    
+<!------------------------------------------------------------------------------>
+
+<div id="ModalRegisterUser" class="modal fade" >
 	<div class="modal-dialog modal-login" id="modal-body-regist">
 		<div class="modal-content">
 			<div class="modal-header">				
