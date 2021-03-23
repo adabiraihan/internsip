@@ -17,6 +17,9 @@
 
 
 
+
+
+
 <style>
 
     #title{
@@ -164,6 +167,77 @@
         line-height: 20px;
     }
 
+    .modal-edit {
+        color: #636363;
+        width: 350px;
+    }
+    .modal-edit .modal-content {
+        padding: 20px;
+        border-radius: 5px;
+        border: none;
+    }
+    .modal-edit .modal-header {
+        border-bottom: none;
+        position: relative;
+        justify-content: center;
+    }
+    .modal-edit h4 {
+        text-align: center;
+        font-size: 26px;
+    }
+    .modal-edit  .form-group {
+        position: relative;
+    }
+    .modal-edit i {
+        position: absolute;
+        left: 13px;
+        top: 11px;
+        font-size: 18px;
+    }
+    .modal-edit .form-control {
+        padding-left: 40px;
+    }
+    .modal-edit .form-control:focus {
+        border-color: #00ce81;
+    }
+    .modal-edit .form-control, .modal-edit .btn {
+        min-height: 40px;
+        border-radius: 3px; 
+    }
+    .modal-edit .hint-text {
+        text-align: center;
+        padding-top: 10px;
+    }
+    .modal-edit .close {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+    }
+    .modal-edit .btn, .modal-edit .btn:active {	
+        border: none;
+        background: #00ce81 !important;
+        line-height: normal;
+    }
+    .modal-edit .btn:hover, .modal-edit .btn:focus {
+        background: #00bf78 !important;
+    }
+    .modal-edit .modal-footer {
+        background: #ecf0f1;
+        border-color: #dee4e7;
+        text-align: center;
+        margin: 0 -20px -20px;
+        border-radius: 5px;
+        font-size: 13px;
+        justify-content: center;
+    }
+    .modal-edit .modal-footer a {
+        color: #999;
+    }
+
+    #modal-body-regist{
+        width: 500px;
+    }
+
 </style>
 
 </head>
@@ -203,8 +277,8 @@
                             <img src="img/telkom.png" class="img-responsive profile-img">
                         </div>
                         <div class="text-information">
-                            <h2 class="main-name">Telkomsel Indonesia</h2>
-                            <h5 class="email-info">telkomsel@gmail.com</h5>
+                            <h2 class="main-name">Telkomsel Indonesia</h2> <!-- NAMPILIN NAMA PERUSAHAAN -->
+                            <h5 class="email-info">telkomsel@gmail.com</h5> <!--NAMPILIN EMAIL PERUSAHAAN-->
                         </div>
                         <div class="tab-section">
                             <ul class="nav nav-tabs">
@@ -218,18 +292,12 @@
                                
                                 <div class="info-section no-edit-forms">
                                     <div class="form-group text-right">
-                                        <a class="label label-info " id="edit-info">Edit</a>
+                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#ModalEditPerusahaan">Edit</button>
                                         <a class="label label-info hide" id="cancel-info">Cancel</a>
                                     </div>
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-id-card fa-lg"></i></span>
-                                            <input type="text" class="form-control" name="" placeholder="" value="Telkomsel">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-envelope-open fa-lg"></i></span>
+                                            <span class="input-group-addon"><i class="fa fa-address-book fa-lg"></i></span>
                                             <input  type="text" class="form-control"  placeholder="Email" value="0869696969">
                                         </div>
                                     </div>
@@ -238,9 +306,6 @@
                                             <span class="input-group-addon"><i class="fa fa-map-marker fa-lg"></i></span>
                                             <input id="" type="text" class="form-control" name="email" placeholder="Address" value="Rasuna Said Jekarte tenggara">
                                         </div>
-                                    </div>
-                                    <div class="text-right">
-                                       <a class="btn-primary btn btn-submit">Submit</a>
                                     </div>
                                 </div>
                               </div>
@@ -290,7 +355,40 @@
         </div>
     </div>
     </div>
-    
+
+<!-- MODAL EDIT PROFILE-->
+<div id="ModalEditPerusahaan" class="modal fade" >
+	<div class="modal-dialog modal-edit" id="modal-body-edit">
+		<div class="modal-content">
+			<div class="modal-header">				
+				<h4 class="modal-title">Edit Profile</h4>
+			</div>
+			<div class="modal-body">
+				<form action="#" method="post">
+					<div class="form-group">
+						<i class="fa fa-user"></i>
+						<input type="text" class="form-control" placeholder="Nama Perusahaan" required="required">
+					</div>
+                    <div class="form-group">
+						<i class="fa fa-address-card"></i>
+						<input type="text" class="form-control" placeholder="No HP" required="required">
+					</div>
+                    <div class="form-group">
+						<i class="fa fa-address-card"></i>
+						<input type="text" class="form-control" placeholder="Email" required="required">
+					</div>
+					<div class="form-group">
+						<i class="fa fa-calendar "></i>
+						<input type="text" class="form-control" placeholder="Alamat" required="required">					
+					</div>
+					<div class="form-group">
+						<input type="submit" class="btn btn-primary btn-block btn-lg" value="Confirm">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>    
     
 </body>
 

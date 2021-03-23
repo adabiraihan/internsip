@@ -298,7 +298,7 @@
 <!------------------------------------------------------------------------------>
 
 
-<!-- Modal Register User-->
+<!-- Modal Register Perusahaan-->
 <div id="ModalRegisterPerusahaan" class="modal fade" >
 	<div class="modal-dialog modal-login" id="modal-body-regist">
 		<div class="modal-content">
@@ -342,6 +342,7 @@
 </div>    
 <!------------------------------------------------------------------------------>
 
+<!--Modal buat register user-->
 <div id="ModalRegisterUser" class="modal fade" >
 	<div class="modal-dialog modal-login" id="modal-body-regist">
 		<div class="modal-content">

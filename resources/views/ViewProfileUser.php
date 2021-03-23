@@ -217,7 +217,7 @@
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <a href="#ModalEdit" class="nav-link active trigger-btn" data-bs-toggle="modal">Edit Profile</a>
+                        <a href="#ModalEditUser" class="nav-link active trigger-btn" data-bs-toggle="modal">Edit Profile</a>
                     </div>
                 </div>
                 <div class="row">
@@ -288,7 +288,7 @@
 
 
 <!-- MODAL EDIT PROFILE-->
-<div id="ModalEdit" class="modal fade" >
+<div id="ModalEditUser" class="modal fade" >
 	<div class="modal-dialog modal-edit" id="modal-body-edit">
 		<div class="modal-content">
 			<div class="modal-header">				
