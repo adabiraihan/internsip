@@ -19,9 +19,49 @@
 
 <style>
 
+    #title{
+        font-size: 3vw;
+        position: relative;
+        bottom: -10px;
+        color: black;
+        font-weight:bold;
+    }
+
+    #nav1{
+        font-size: 1.5vw;
+        position: relative;
+        right: -200%;
+        top: -20px;
+        color: black;
+        font-weight:bold;
+    }
+
+    #nav2{
+        font-size: 1.5vw;
+        position: relative;
+        right: -230%;
+        top: -20px;
+        color: black;
+        font-weight:bold;
+    }
+
+    #nav3{
+        font-size: 1vw;
+        position: relative;
+        right: -400%;
+        top: -20px;
+        color: black;
+        font-weight:bold;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        width: 5%;
+    }
+
     body{
             background: -webkit-linear-gradient(left, #ad9bf3, #35c6ee);
-        }
+    }
 
     .profile-layout .profile-section .main-name,.profile-layout .profile-section .email-info{
         text-align:center;
@@ -40,18 +80,9 @@
         height:300px;
     position:relative;
     padding:20px 10px 20px 10px !important;
-    background:#fbfbfb;
-        background: #dae2f8; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #dae2f8, #d6a4a4); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #dae2f8, #d6a4a4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #7c9efc, #2270e6);
     
-    background: #4ca1af; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4ca1af, #c4e0e5); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4ca1af, #c4e0e5);
     
-    background: #1d2b64; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1d2b64, #f8cdda); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1d2b64, #f8cdda);
     }
     .profile-layout .profile-img-section .profile-img{
     position:absolute;
@@ -137,8 +168,29 @@
 
 </head>
 
-<body>    
-                     
+<body>
+<div style="background-color: white;">    
+    <nav class="navbar navbar-expand-lg navbar navbar-light bg-transparent" id="wholenavbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="title" href="ViewHome.php">INTERNSIP</a>
+          <div class="collapse navbar-collapse"></div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" id="nav1" href="#">Cari Lowongan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav2" href="#">Cari Perusahaan</a>
+              </li>
+              <li class="nav-item">
+                <p class="nav-link" id="nav3">NAMA USER/PERUSAHAAN</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</div>
+<br>
+<br>
     <div class="col-md-6 col-md-offset-3">
     <div class="panel">
         <div class="panel-body">
@@ -162,7 +214,7 @@
                             </ul>
         
                             <div class="tab-content">
-                              <div id="home" class="tab-pane fade in active">
+                              <div id="home" class="tab-pane fade in active"> <!-- MENU BUAT UPDATE / EDIT DATA DARI PERUSAHAAN-->
                                
                                 <div class="info-section no-edit-forms">
                                     <div class="form-group text-right">
@@ -171,44 +223,20 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-mobile fa-lg"></i></span>
-                                            <input type="text" class="form-control" name="" placeholder="Mobile" value="9876543210">
+                                            <span class="input-group-addon"><i class="fa fa-id-card fa-lg"></i></span>
+                                            <input type="text" class="form-control" name="" placeholder="" value="Telkomsel">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-envelope-open fa-lg"></i></span>
-                                            <input  type="text" class="form-control"  placeholder="Email" value="schooladm@gmail.com">
+                                            <input  type="text" class="form-control"  placeholder="Email" value="0869696969">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-map-marker fa-lg"></i></span>
-                                            <input id="" type="text" class="form-control" name="email" placeholder="Address" value="h, Sec 33 , U.P., Noida, 201010">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-id-card fa-lg"></i></span>
-                                            <input id="" type="text" class="form-control" name="email" placeholder="Login Id" value="B2badmin">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-key fa-lg"></i></span>
-                                            <input id="" type="text" class="form-control" name="email" placeholder="Activation key" value="13e81756-7v58-526e-1125-111ede049543">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-clock-o fa-lg"></i></span>
-                                            <input id="" type="text" class="form-control" name="email" placeholder="Activation Since" value="22 Aug 2016">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-user fa-lg"></i></span>
-                                            <input id="" type="text" class="form-control" name="email" placeholder="User type" value="B2badmin">
+                                            <input id="" type="text" class="form-control" name="email" placeholder="Address" value="Rasuna Said Jekarte tenggara">
                                         </div>
                                     </div>
                                     <div class="text-right">
@@ -216,60 +244,43 @@
                                     </div>
                                 </div>
                               </div>
-                              <div id="menu1" class="tab-pane fade">
-                              
+                              <div id="menu1" class="tab-pane fade"> <!-- MENU BUAT PROFILE DARI PERUSAAHN TERSEBUT-->
                                 <div class="friend-list">
                                     <div class="media">
                                         <a href="#">
-                                          <div class="media-left">
-                                            <img src="https://media.licdn.com/mpr/mpr/shrink_100_100/AAEAAQAAAAAAAAZhAAAAJGE3YjFiNGMwLWQ1NzQtNDY0ZS04ZjI2LWNjM2IwMGExNTQxNw.jpg" class="media-object" style="width:60px">
-                                          </div>
                                           <div class="media-body">
-                                            <h4 class="media-heading">Santosh Singh</h4>
-                                            <p>UI  Developer</p>
-                                          </div>
-                                        </a>
-                                    </div>
-                                    <div class="media">
-                                        <a href="#">
-                                          <div class="media-left">
-                                            <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAzoAAAAJGM2OWJjMGEzLTQ3ZjItNDYzMy1hMDJkLTZkODc0NDI0YWZlNQ.jpg" class="media-object" style="width:60px">
-                                          </div>
-                                          <div class="media-body">
-                                            <h4 class="media-heading">Sagar Saini</h4>
-                                            <p>UI  Developer</p>
-                                          </div>
-                                        </a>
-                                    </div>
-                                    <div class="media">
-                                        <a href="#">
-                                          <div class="media-left">
-                                            <img src="https://lh6.googleusercontent.com/-FQt6RptkvQI/AAAAAAAAAAI/AAAAAAAAAAA/RS9O9VEXTXc/s128-c-k/photo.jpg" class="media-object" style="width:60px">
-                                          </div>
-                                          <div class="media-body">
-                                            <h4 class="media-heading">Prakhar Mathur</h4>
-                                            <p>UI Developer</p>
+                                            <h4 class="media-heading">Telkomsel adalah merek GSM dan UMTS operator jaringan seluler telpon yang beroperasi di Indonesia. Merek ini dimiliki oleh Telkom Indonesia dan Indosat dengan komposisi saham sebesar 65% oleh Telkomsel dan sisanya oleh Indosat pada awal peluncurannya pada tanggal 26 Mei 1995 di Jakarta.</h4>
                                           </div>
                                         </a>
                                     </div>
                                 </div>
                               </div>
-                              <div id="menu2" class="tab-pane fade">
-                                <div class="form-group">
+                              <div id="menu2" class="tab-pane fade"> <!-- MENU BUAT LIAT SIAPA AJA YANG UDAH NGELAMAR CUMA PERUSAHAAN DOANG YG BISA LIAT -->
+                                <div class="form-group"> 
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-key fa-lg"></i></span>
-                                        <input id="email" type="text" class="form-control" name="email" placeholder="Password">
+                                        <br>
+                                        <br>
+                                        <table class="table table-hover table-striped">
+                                            <tr>
+                                                <th>Nama</th>
+                                                <th>Pendidikan</th>
+                                                <th>Universitas</th>
+                                                <th>Status</th>
+                                              </tr>
+                                              <tr>
+                                                <td><a href="NGELIAT KE SI PROFILE USER">Pak dadang</a></td>
+                                                <td>Siskamling</td>
+                                                <td>Univ Catur</td>
+                                                <th><button class="btn btn-info" type="submit">Terima</button> <button class="btn btn-danger" type="submit">Tolak</button></th>
+                                              </tr>
+                                              <tr>
+                                                <td><a href="NGELIAT KE SI PROFILE USER">eve</a></td>
+                                                <td>Jackson</td>
+                                                <td>94</td>
+                                                <th><button class="btn btn-info" type="submit">Terima</button> <button class="btn btn-danger" type="submit">Tolak</button></th>
+                                              </tr>
+                                        </table>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-key fa-lg"></i></span>
-                                        <input id="email" type="text" class="form-control" name="email" placeholder="Confirm Password">
-                                    </div>
-                                </div>
-                               
-                                 <div class="text-right">
-                                    <a class="btn btn-primary btn-submit">Submit</a>
                                 </div>
                               </div>
                             </div>
