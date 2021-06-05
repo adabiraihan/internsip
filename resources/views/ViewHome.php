@@ -15,189 +15,12 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-<style>
-
-    #title{
-        font-size: 3vw;
-        color: black;
-        font-weight:bold;
-    }
-    #nav1{
-        font-size: 1.5vw;
-        position: relative;
-        right: -50%;
-        bottom: -15%;
-        color: black;
-        font-weight:bold;
-    }
-
-    #nav2{
-        font-size: 1.5vw;
-        position: relative;
-        right: -70%;
-        bottom:-15%;
-        color: black;
-        font-weight:bold;
-    }
-
-    #nav3{
-        font-size: 1.5vw;
-        position: relative;
-        right: -900%;
-        bottom:-15%;
-        color: black;
-        font-weight:bold;
-    }
-
-    #img1{
-        position:relative;
-        top: -25px;
-        width:100%;
-    }
-
-    #select{
-        font-size:1.5vw;
-    }
-
-    #formpilihbahasa{
-        position:relative;
-        right:-135%;
-        bottom:-15px;
-    }
-
-    #selectbahasa{
-        background-color: #F0FFF0;
-        position:relative;
-        right:-2%;
-        width:155px;
-        height:35px;
-        border: 6px solid transparent;
-    }
-
-    #formcarikerja{
-        position:relative;
-        top:-680px;
-    }
-
-    #jenisjob{
-        position:relative;
-        font-size: 1.5vw;
-        outline: 0;
-        border-width: 0 0 2px;
-        border-color: whitesmoke;
-        background-color: transparent;
-    }
-
-    #wilayah{
-        position:relative;
-        bottom: -60px;
-        font-size: 1.5vw;
-        outline: 0;
-        border-width: 0 0 2px;
-        border-color: whitesmoke;
-        background-color: transparent;
-    }
-
-    #spesialisasi{
-        position:relative;
-        bottom: -120px;
-        font-size: 1.5vw;
-        outline: 0;
-        border-width: 0 0 2px;
-        border-color: whitesmoke;
-        background-color: transparent;
-    }
-
-    #buttoncari{
-        position: relative;
-        bottom: -190px;
-        left: -267px;
-        height: 50px;
-        width: 260px;
-    }
-
-    .modal-login {
-        color: #636363;
-        width: 350px;
-    }
-    .modal-login .modal-content {
-        padding: 20px;
-        border-radius: 5px;
-        border: none;
-    }
-    .modal-login .modal-header {
-        border-bottom: none;
-        position: relative;
-        justify-content: center;
-    }
-    .modal-login h4 {
-        text-align: center;
-        font-size: 26px;
-    }
-    .modal-login  .form-group {
-        position: relative;
-    }
-    .modal-login i {
-        position: absolute;
-        left: 13px;
-        top: 11px;
-        font-size: 18px;
-    }
-    .modal-login .form-control {
-        padding-left: 40px;
-    }
-    .modal-login .form-control:focus {
-        border-color: #00ce81;
-    }
-    .modal-login .form-control, .modal-login .btn {
-        min-height: 40px;
-        border-radius: 3px; 
-    }
-    .modal-login .hint-text {
-        text-align: center;
-        padding-top: 10px;
-    }
-    .modal-login .close {
-        position: absolute;
-        top: -5px;
-        right: -5px;
-    }
-    .modal-login .btn, .modal-login .btn:active {	
-        border: none;
-        line-height: normal;
-    }
-    .modal-login .btn:hover, .modal-login .btn:focus {
-        background: #1e90ff !important;
-    }
-
-    #btnlogin{
-        background-color: #00ce81;
-    }
-
-    #btnlogin:hover{
-        background: #02aa80 !important;
-    }
-    .modal-login .modal-footer {
-        background: #ecf0f1;
-        border-color: #dee4e7;
-        text-align: center;
-        margin: 0 -20px -20px;
-        border-radius: 5px;
-        font-size: 13px;
-        justify-content: center;
-    }
-    .modal-login .modal-footer a {
-        color: #999;
-    }
-
-    #modal-body-regist{
-        width: 500px;
-    }
-
-</style>
+<link href="/css/home.css" rel="stylesheet">
 
 </head>
 <body>
+
+<!-- Berfungsi untuk membuat navbar pada halaman view home-->
 <nav class="navbar navbar-expand-lg navbar navbar-light bg-transparent" id="wholenavbar">
   <div class="container-fluid">
     <a class="navbar-brand" id="title" href="#">INTERNSIP</a>
@@ -222,6 +45,7 @@
 
 <img src="img/homepic.jpg" id="img1">
 
+<!-- Berfungsi untuk membuat container yg bertujuan untnuk membuat form cari lowongan-->
 <div class="container">   
         <div class="top-left"> 
             <form id="formcarikerja" clas="form-control form-control-lg">
@@ -239,6 +63,7 @@
         </div>
 </div>
 
+<!-- Berfungsi untuk memunculkan modal register menjadi user / perusahaan-->
 <!-- Modal Pilih Register User / Perusahan-->
 <div id="ModalPilih" class="modal fade">
 	<div class="modal-dialog modal-login">
@@ -264,7 +89,7 @@
 <!------------------------------------------------------------------------------>
 
 
-
+<!-- Berfungsi untuk memunculkan Modal Login yang nanti akan digunakan user/perusahan untuk login-->
 <!-- Modal Login -->
 
 <div id="ModalLogin" class="modal fade">
@@ -297,7 +122,7 @@
 </div>    
 <!------------------------------------------------------------------------------>
 
-
+<!-- Berfungsi untuk memunculkan modal untuk register sebagai perusahaan-->
 <!-- Modal Register Perusahaan-->
 <div id="ModalRegisterPerusahaan" class="modal fade" >
 	<div class="modal-dialog modal-login" id="modal-body-regist">
@@ -342,6 +167,7 @@
 </div>    
 <!------------------------------------------------------------------------------>
 
+<!-- Berfungsi untuk memunculkan modal untuk register sebagai user(pelamar)-->
 <!--Modal buat register user-->
 <div id="ModalRegisterUser" class="modal fade" >
 	<div class="modal-dialog modal-login" id="modal-body-regist">

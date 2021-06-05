@@ -1,7 +1,5 @@
 <?php
 
-#Masih Ada Bug
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
