@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Berfungsi untuk membuat View dari Profile User-->
-<link href="/css/profile_user.css" rel="stylesheet">
+<link href="css/profile_user.css" rel="stylesheet">
 
 </head>
 <body>

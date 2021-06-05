@@ -17,7 +17,7 @@
 
 <!-- Berfungsi untuk membuat View dari Profile Perusahaan-->
 
-<link href="/css/profile_perusahaan.css" rel="stylesheet">
+<link href="css/profile_perusahaan.css" rel="stylesheet">
 
 </head>
 
