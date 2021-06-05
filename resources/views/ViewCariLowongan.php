@@ -26,7 +26,6 @@
 
 
 <body>
-  <!-- REFACTORING 
     <nav class="navbar navbar-expand-lg navbar navbar-light bg-transparent" id="wholenavbar">
         <div class="container-fluid">
           <a class="navbar-brand" id="title" href="ViewHome.php">INTERNSIP</a>
@@ -48,9 +47,8 @@
           </div>
         </div>
       </nav>
-END REFACTORING -->
 
-@yield('wholenavbar')
+<!--@yield('wholenavbar')-->
 
 <!--Berfungsi untuk memberikan efek carousel pada view halaman terusebut ( carousel = gambar yang bergerak ke kiri dan kekanan)-->
 
